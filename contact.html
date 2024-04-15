@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head> 
+  <style>
+    .brain{ 
+        display: flex;
+        justify-content: space-around;
+        gap: 10%;
+    }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{height:100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .map{ display: flex;
+        justify-content: space-around;
+        gap: 100px;
+
+        }
+
+     .container{display: flex;
+        flex-direction: column;
+        width: 300px;border: 1px solid cornflowerblue;
+        border-radius: 5px;
+        padding: 7px;
+
+     }
+    input{
+        margin: 5px 0px;
+        height: 35px;
+        padding: 7px;
+    }
+    button{
+            height: 35px;
+            margin: 5px 0px;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            color: whitesmoke;
+    }
+    button:hover {background-color: #333;}
+    color: aqua;}
+  </style>
+  <body>
+   
+  
+
+    <div class="brain">
+        <div>
+            <p>
+                For more information contact me on<br>
+                WhatsApp +27 68 210 4225<br>
+                <b>OR</b><br>
+                rethabilechomi610@gmail.com
+            </p>
+        </div>
+        <div class="container">
+          <label for="fname + lname">first name + last name</label>
+          <input
+            type="text"
+            name="First name and Last name"
+            id="fname + lname"
+            placeholder="enter details.
+          />
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email address"
+            id="email address"
+            placeholder="email us"
+          />
+          <label for="city"> city name</label>
+          <input
+            type="text"
+            name="city name "
+            id="city here"
+            placeholder="enter here "
+          />
+          <label for="povince name">province name </label>
+          <input
+            type="text"
+            name="province name"
+            id="province name here"
+            placeholder="writer here "
+          />
+          <div>
+            <label for=" message">message here about yourself</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write something.
+              style="height: 300px"
+            ></textarea>
+            <button>send</button>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.0309524018876!2d24.727176076325392!3d-28.71862097561783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9b1abdb407330b%3A0xf8c1248984f3c28d!2s1778%20Radebe%20St%2C%20Galeshewe%2C%20Kimberley%2C%208345!5e0!3m2!1sen!2sza!4v1712241360270!5m2!1sen!2sza"
+            width="300"
+            height="250"
+            style="border: 25"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+    </div>
+  </body>
+</html>

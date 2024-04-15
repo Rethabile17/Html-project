@@ -1,0 +1,29 @@
+.body{
+    padding-left: 120px;
+    padding-right: 120px;
+    
+  }      
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+video{
+    margin-top: 60px;
+    
+}
+.about {
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
