@@ -20,6 +20,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 50px;
 
         }
 
@@ -29,7 +30,8 @@
 
         }
 
-     .container{display: flex;
+     .container{ background-color: aliceblue;
+       display: flex;
         flex-direction: column;
         width: 300px;border: 1px solid cornflowerblue;
         border-radius: 5px;
@@ -37,25 +39,78 @@
 
      }
     input{
-        margin: 5px 0px;
+       
         height: 35px;
         padding: 7px;
     }
     button{
             height: 35px;
-            margin: 5px 0px;
+           
             background-color: blue;
             border: none;
             border-radius: 5px;
             color: whitesmoke;
     }
-    button:hover {background-color: #333;}
-    color: aqua;}
+    button:hover {background-color: #0aac12;
+      color: aqua;}
+
+      .errorMessage{
+    
+    font-size: .9rem;
+    font-weight: 600;
+    font-family: monospace;
+}
+.formDetails.success input {
+    border-color: #09c372;
+    outline: none;
+  }
+
+  .formDetails.error input {
+    border-color: #f2070e;
+  }
+  .formDetails.error textarea {
+    border-color: #f2070e;
+  }
+  #myForm{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+/* .formDetails{
+    margin: 1rem 0;
+} */
+
+label{
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+
+input{
+    width: 100%;
+    padding: .6rem 0;
+    outline: none;
+    font-size: 1rem;
+}
+
+input:focus{
+    outline: 1px solid #064247;
+}
+button{
+    margin: 1.1rem 0;
+    background-color: #16dcee;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: .8rem 0;
+    width: 100%;
+}
   </style>
   <body>
    
   
-
+<div id="error"></div>
     <div class="brain">
         <div>
             <p>
@@ -66,43 +121,29 @@
             </p>
         </div>
         <div class="container">
-          <label for="fname + lname">first name + last name</label>
-          <input
-            type="text"
-            name="First name and Last name"
-            id="fname + lname"
-            placeholder="enter details.
-          />
-          <label for="email">Email</label>
-          <input
-            type="text"
-            name="email address"
-            id="email address"
-            placeholder="email us"
-          />
-          <label for="city"> city name</label>
-          <input
-            type="text"
-            name="city name "
-            id="city here"
-            placeholder="enter here "
-          />
-          <label for="povince name">province name </label>
-          <input
-            type="text"
-            name="province name"
-            id="province name here"
-            placeholder="writer here "
-          />
-          <div>
-            <label for=" message">message here about yourself</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Write something.
-              style="height: 300px"
-            ></textarea>
-            <button>send</button>
+          <form action="https://formspree.io/f/mjvnjedy" method="post" id="myForm">
+            <div class="formDetails">
+              <label for="name">Name:</label><br/>
+              <input type="text" id="name" name="name">
+              <div class="errorMessage"></div>
+          </div>
+
+          <div class="formDetails">
+                <label for="email">Email:</label><br/>
+                <input type="email" id="email" name="email">
+                <div class="errorMessage"></div>
+            </div>
+
+          <div class="formDetails">
+                <label for="message">Message:</label><br/>
+                <textarea id="message" name="message" rows="4" >
+                    
+                    </textarea>
+                <div class="errorMessage"></div>
+            </div>
+          
+            <button id="button" type="submit">Submit</button>
+          </form>
           </div>
         </div>
         <div class="map">
@@ -117,5 +158,6 @@
           ></iframe>
         </div>
     </div>
+    <script src="./contact.js"></script>
   </body>
 </html>

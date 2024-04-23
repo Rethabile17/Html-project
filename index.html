@@ -1,57 +1,7 @@
 <html>
 
 <head>
-    <style>
-
-    
-  body{
-    padding-left: 120px;
-    padding-right: 120px;
-
-  }
-  
-        
-.nav{
-    display: flex;
-    justify-content: space-around;
-    border-radius: 50px;
-    
-}
-ul {
-    display: flex;
-    flex-direction: row;
-    color: aliceblue;
-    
-}
-
-a {
-    text-decoration: none;
-}
-video{
-    margin-top: 60px;
-    
-}
-.about {
-    display: flex;
-    justify-content: space-around;
-    gap: 5%;
-}
-.footer{
-    display: flex;
-    justify-content: space-around;
-    gap: 5%;
-}
-.image{
-   
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    border-radius: 50%;
-} 
-
-
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -73,10 +23,10 @@ video{
 
      <div class="about">
         <div>
-            <h1>Rethabile Chomi</h1>
+            <h1 id="name"></h1>
             <h2>BIO</h2>
-            <p>
-                I'm a movie lover who enjoys streaming movies. <br/> My hobbies are working-out and cooking. <br/>Love reading books on nature and animals.
+            <p id="bio">
+               
             </p>
         </div>
         <img src="./assets/362271347_1278039943078659_404882932871851310_n.jpg" alt="" width="300" height="300">
@@ -89,16 +39,16 @@ video{
         </div>
         <div class="links">
             <ul>       
-                <ol><a href="https://www.facebook.com/rethabile.chomi">Facebook</a></ol>
-                <ol><a href="https://www.twitter.com/l>">Twitter</a></ol>
-                <ol><a href="https://www.instagram.com/"> Instagram</a></ol>
+                <ol><a href="https://www.facebook.com/rethabile.chomi"><img src="./assets/facebook.png" alt="" width="50"></a></ol>
+                <ol><a href="https://www.twitter.com/l>"><img src="./assets/twitter.png" alt="" width="50"></a></ol>
+                <ol><a href="https://www.instagram.com/"> <img src="./assets/instagram.png" alt="" width="50"></a></ol>
               </ul>  
         </div>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.0309524018876!2d24.727176076325392!3d-28.71862097561783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9b1abdb407330b%3A0xf8c1248984f3c28d!2s1778%20Radebe%20St%2C%20Galeshewe%2C%20Kimberley%2C%208345!5e0!3m2!1sen!2sza!4v1712241360270!5m2!1sen!2sza" width="600" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
      </div>
-  
+     <script src="./index.js"></script>
 </body>
 
 </html
